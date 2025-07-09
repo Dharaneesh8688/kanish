@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /employee/
+
+Sitemap: https://www.uwindowserode.com/sitemap.xml
