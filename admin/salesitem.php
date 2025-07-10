@@ -56,10 +56,11 @@ if ($_SESSION['role'] !== 'admin') {
               echo "<td>" . htmlspecialchars($row['purchase_cess_percent']) . "%</td>";
               echo "<td>" . htmlspecialchars($row['barcode']) . "</td>";
               echo "<td>" . htmlspecialchars($row['description']) . "</td>";
-              echo "<td>
-                     
-                      <a href='delete_item.php?id=" . $row['id'] . "' class='btn btn-sm btn-danger' onclick=\"return confirm('Are you sure you want to delete this item?');\">Delete</a>
-                    </td>";
+           echo "<td>
+        <a href='edit_item.php?id=" . $row['id'] . "' class='btn btn-sm btn-warning me-1'>Edit</a>
+        <a href='delete_item.php?id=" . $row['id'] . "' class='btn btn-sm btn-danger' onclick=\"return confirm('Are you sure you want to delete this item?');\">Delete</a>
+      </td>";
+
               echo "</tr>";
             }
           } else {

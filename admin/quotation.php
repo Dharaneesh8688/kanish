@@ -26,8 +26,12 @@ include 'includes/db.php';
         <div>
           <h4 class="mb-0">Quotation</h4>
           <p class="text-muted">All Quotations</p>
+        
         </div>
-        <a href="add_quotation.php" class="btn btn-primary">New</a>
+        <div>
+            <a href="add_quotation.php" class="btn btn-primary">New Quotation</a>
+        <a href="add_customer.php" class="btn btn-warning">New Customer</a>
+        </div>
       </div>
 
       <div class="table-responsive">

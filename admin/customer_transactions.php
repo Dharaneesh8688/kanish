@@ -22,11 +22,11 @@ $customers = $conn->query("SELECT * FROM customers ORDER BY company_name ASC");
 <div class="container-fluid">
   <div class="row">
     <!-- Sidebar -->
-    <div class="col-md-3 col-lg-2 p-0">
+    <div class="col-md-3 p-0">
       <?php include 'includes/sidebar.php'; ?>
     </div>
     <!-- Main Content -->
-    <div class="col-md-9 col-lg-10 py-4">
+    <div class="col-md-9  py-4">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-3">
           <h2 class="mb-0">Customer Transactions</h2>
@@ -55,8 +55,8 @@ $customers = $conn->query("SELECT * FROM customers ORDER BY company_name ASC");
               // Fetch all quotations for this customer
               $q = $conn->query("SELECT id, grand_total FROM quotations WHERE client_id = $customerId ORDER BY id ASC");
 
-              if ($q && $q->num_rows > 0):
-                while($rowQ = $q->fetch_assoc()):
+             if ($q && $q->num_rows > 0):
+  while($rowQ = $q->fetch_assoc()):
                   $quotationId = $rowQ['id'];
                   $grandTotal = $rowQ['grand_total'];
 
@@ -90,15 +90,9 @@ $customers = $conn->query("SELECT * FROM customers ORDER BY company_name ASC");
             </tr>
             <?php
                 endwhile;
-              else:
-            ?>
-            <tr>
-              <td><?= $sn++; ?></td>
-              <td><?= htmlspecialchars($c['company_name']); ?></td>
-              <td colspan="6" class="text-center">No quotations found.</td>
-            </tr>
-            <?php
-              endif;
+else:
+  continue;
+endif;
             endwhile;
             ?>
           </tbody>

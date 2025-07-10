@@ -181,7 +181,7 @@ if (!empty($row['client_id'])) {
     <div class="d-flex justify-content-between align-items-center mb-4">
       <div>
       <img src="../asset/logo.png" alt="Logo" class=" mb-2" style="width: 300px; "> <br>
-        <small class="text-muted">GSTIN: 33GBJPS7887H1ZS</small>
+        
       </div>
       <div class="text-end">
         <h4 class="mb-0">Quotation</h4>

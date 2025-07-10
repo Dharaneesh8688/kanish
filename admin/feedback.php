@@ -43,12 +43,12 @@ if ($result) {
 <div class="container-fluid">
   <div class="row">
     <!-- Sidebar -->
-    <div class="col-md-3 col-lg-2 p-0">
+    <div class="col-md-3  p-0">
       <?php include 'includes/sidebar.php'; ?>
     </div>
 
     <!-- Main content -->
-    <div class="col-md-9 col-lg-10 py-4">
+    <div class="col-md-9  py-4">
       <div class="container">
         <h2 class="mb-4">Customer Feedback Management</h2>
   <?php if (empty($feedbacks)): ?>

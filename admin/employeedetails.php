@@ -24,12 +24,12 @@ if ($_SESSION['role'] !== 'admin') {
 <div class="container-fluid">
   <div class="row">
     <!-- Sidebar column -->
-    <div class="col-md-3 col-lg-2 p-0">
+    <div class="col-md-3  p-0">
       <?php include 'includes/sidebar.php'; ?>
     </div>
 
     <!-- Main content column -->
-    <div class="col-md-9 col-lg-10 mt-4">
+    <div class="col-md-9  mt-4">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-3">
           <h3>All Employees</h3>

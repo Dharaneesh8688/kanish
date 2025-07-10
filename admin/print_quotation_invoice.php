@@ -100,7 +100,7 @@ body {
   font-weight: 600;
 }
 .logo {
-  max-height: 80px;
+  max-height: 100px;
 }
 .table th,
 .table td {
@@ -182,8 +182,7 @@ body {
         <div class="invoice-title">TAX INVOICE</div>
         <small>Date: <?= htmlspecialchars($row['doc_date']); ?></small><br>
         <small>Invoice #: <?= htmlspecialchars($row['id']); ?></small><br>
-        <small>Job Card No#: <?= htmlspecialchars($row['job_card_no']); ?></small><br>
-        <small>Glass No #: <?= htmlspecialchars($row['glass_no']); ?></small>
+      
       </div>
     </div>
     <div class="row mb-2">

@@ -30,12 +30,12 @@ $result = $conn->query("SELECT * FROM vacancies ORDER BY created_at DESC");
 <div class="container-fluid">
   <div class="row">
     <!-- Sidebar column -->
-    <div class="col-md-3 col-lg-2 p-0">
+    <div class="col-md-3  p-0">
       <?php include 'includes/sidebar.php'; ?>
     </div>
 
     <!-- Main content column -->
-    <div class="col-md-9 col-lg-10 py-4">
+    <div class="col-md-9  py-4">
       <div class="container">
         <h2 class="mb-4">Manage Vacancies</h2>
         <a href="add_vacancy.php" class="btn btn-success mb-3">Add New Vacancy</a>
